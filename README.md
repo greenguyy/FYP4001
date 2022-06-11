@@ -1,4 +1,36 @@
 # FYP4001
+
+For GIT installation of both new and old menu, follow the guide below. 
+
+Install git:
+
+
+sudo apt install -y git
+Clone IOTstack:
+
+If you want "new menu":
+
+
+git clone https://github.com/SensorsIot/IOTstack.git ~/IOTstack
+If you prefer "old menu":
+
+
+git clone -b old-menu https://github.com/SensorsIot/IOTstack.git ~/IOTstack
+Run the menu and choose your containers:
+
+
+cd ~/IOTstack
+./menu.sh
+Note:
+
+If you are running "old menu" for the first time, you will be guided to "Install Docker". That will end in a reboot, after which you should re-enter the menu and choose your containers.
+Bring up your stack:
+
+
+cd ~/IOTstack
+docker-compose up -d
+
+
 These changes mean that networking is **identical** under both *old* and *new* menus. To summarise the changes:
 
 1. Only two internal networks are defined – as follows:
