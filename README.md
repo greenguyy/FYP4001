@@ -1,6 +1,6 @@
 # FYP4001
 
-For GIT installation of both new and old menu, follow the guide below. 
+##For GIT installation of both new and old menu, follow the guide below. 
 
 Install git:
 
